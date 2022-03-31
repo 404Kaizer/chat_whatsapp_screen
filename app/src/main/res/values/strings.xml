@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tela Whatsapp</string>
+    <string name="toolbar_logo_name">WhatsApp</string>
+    <string name="chat_title">Título do Chat</string>
+    <string name="chat_last_message">Útltima mensagem enviada no chat</string>
+    <string name="chat_datetime">29/03/2022</string>
+    <string name="first_top_tab">Conversas</string>
+    <string name="sec_top_tab">Status</string>
+    <string name="trd_top_tab">Chamadas</string>
+    <string name="float_btn_desc">Iniciar um Chat</string>
+    <string name="call_datetime">29 de março 20:35</string>
+    <string name="call_title">Título da Chamada</string>
+
+    <string name="float_call_btn">Iniciar uma Chamada</string>
+    <string name="viewpager_txt">Tab changer</string>
+</resources>

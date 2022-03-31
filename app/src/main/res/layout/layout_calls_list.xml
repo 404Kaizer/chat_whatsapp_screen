@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/call_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/caller_perfil_photo"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:src="@drawable/photo_replacer"
+            app:layout_constraintTop_toTopOf="@id/call_container"
+            app:layout_constraintStart_toStartOf="@id/call_container"
+            app:layout_constraintBottom_toBottomOf="@id/call_container"
+            />
+
+        <TextView
+            android:id="@+id/call_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/call_container"
+            app:layout_constraintStart_toEndOf="@id/caller_perfil_photo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/call_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/made_or_received_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/caller_perfil_photo"
+            app:layout_constraintBottom_toBottomOf="@id/call_container"
+            android:src="@drawable/call_received"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/call_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/made_or_received_call"
+            app:layout_constraintBottom_toBottomOf="@id/call_container"
+            android:text="@string/call_datetime"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/gray"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/call_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/call_container"
+            app:layout_constraintEnd_toEndOf="@id/call_container"
+            app:layout_constraintBottom_toBottomOf="@id/call_container"
+            android:src="@drawable/type_call"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
